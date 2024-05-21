@@ -1,0 +1,152 @@
+
+.recruitmentsplitcard{
+    box-shadow: 0 10px 50px 0 rgba(0,0,0,.085);
+    margin: 20px;
+}
+
+.recruitmentflexbox{
+    width: 100%;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.recruitmentleftside {
+    
+    background: white;
+
+    .recruitmentleftcontent{
+        padding: 20px;
+
+        h2{
+            font-family: Druk-Heavy;
+            font-size: 3rem;
+            text-transform: uppercase;
+            color: black;
+        }
+        p{
+            color: #63615e;
+            font-family: Poppins;
+            font-weight: 400;
+        }
+        .recruitmentleftline{
+            color: rgba(8, 8, 8, 0.61);
+            
+        }
+
+        .recruitmentcardtable{
+            ul{
+                list-style-type: disc;
+                list-style-position: outside;
+                
+                margin-bottom: 1.5rem;
+                line-height: 1.7;
+                color: rgba(8, 8, 8, 0.61);
+
+                li{
+                    list-style-type: disc;
+                    list-style-position: outside;
+                    margin-bottom: 0.625rem;
+                    line-height: 1.7;
+                    font-family: Poppins;
+                }
+            }
+        }
+    }
+  }
+
+.recruitmentrightside{
+    background: white;
+
+    .recruitmentrightcontent{
+        padding: 20px;
+
+        h2{
+            font-family: Druk-Heavy;
+            font-size: 3rem;
+            text-transform: uppercase;
+            color: black;
+        }
+        p{
+            color: #63615e;
+            font-family: Poppins;
+            font-weight: 400;
+        }
+        .recruitmentrightline{
+            color: rgba(8, 8, 8, 0.61);
+            
+        }
+
+        .recruitmentcardtable{
+            ul{
+                list-style-type: disc;
+                list-style-position: outside;
+                
+                margin-bottom: 1.5rem;
+                line-height: 1.7;
+                color: rgba(8, 8, 8, 0.61);
+
+                li{
+                    list-style-type: disc;
+                    list-style-position: outside;
+                    margin-bottom: 0.625rem;
+                    line-height: 1.7;
+                    font-family: Poppins;
+                }
+            }
+        }
+    }
+}
+.recruitmentmiddle{
+    
+    background: #0060b5;
+
+    .recruitmentmiddlecontent{
+        padding: 20px;
+
+        h2{
+            font-family: Druk-Heavy;
+            font-size: 3rem;
+            text-transform: uppercase;
+            color: white;
+        }
+        p{
+            color: white;
+            opacity: 0.8;
+            font-family: Poppins;
+            font-weight: 400;
+        }
+        .recruitmentmiddleline{
+            color: rgb(255, 255, 255);
+            opacity: 0.6;
+        }
+
+        .recruitmentmiddlecardtable{
+            ul{
+                list-style-type: disc;
+                list-style-position: outside;
+                
+                margin-bottom: 1.5rem;
+                line-height: 1.7;
+                color: rgb(255, 255, 255);
+                opacity: 0.8;
+
+                li{
+                    list-style-type: disc;
+                    list-style-position: outside;
+                    margin-bottom: 0.625rem;
+                    line-height: 1.7;
+                    font-family: Poppins;
+                }
+            }
+        }
+    }
+  }
+
+  .recruitmentleftside,
+  .recruitmentrightside,
+  .recruitmentmiddle{
+    -webkit-flex: 1;
+    flex: 1;
+    
+  }

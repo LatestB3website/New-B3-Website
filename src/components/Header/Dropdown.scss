@@ -1,0 +1,41 @@
+.dropdown-menuu {
+    width: 170px;
+    position: absolute;
+    top: 80px;
+    list-style: none;
+    text-align: start;
+  }
+  
+  .dropdown-menuu li {
+    background: white;
+
+  }
+  
+  .dropdown-menuu li:hover {
+    background: #0060b5;
+
+    a{
+        color: white;
+    }
+  }
+  
+  .dropdown-menuu.clicked {
+    display: none;
+  }
+  
+  .dropdown-link {
+    display: block;
+    height: 100%;
+    width: 100%;
+    font-family: Montserrat;
+    text-decoration: none;
+    color: #0060b5;
+    padding: 16px;
+  }
+  
+  @media screen and (max-width: 960px) {
+    .fa-caret-down {
+      display: none;
+    }
+  }
+  

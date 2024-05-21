@@ -1,0 +1,142 @@
+.cardMain{
+    display: flex;
+    align-items: center;
+    min-height: 50vh;
+    padding: 20px;
+
+    margin-left: 70px;
+
+
+}
+
+.cardMain::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+
+}
+
+.cardContainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+    transition-duration: 200ms;
+    border-radius: 20px;
+    
+
+}
+
+.cardContainer:hover{
+
+    .cardContainer .cardLayout .cardContent .longDescription{
+
+        display:contents;
+    
+    }
+}
+
+.cardContainer .cardLayout{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    background:rgba(255,255,255,0.17);
+    display:flex;
+    padding: 20px;
+    border-radius: 30px;
+    justify-content: center;
+    transition-duration: 200ms;
+    align-items: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    border-left: 1px solid rgba(255,255,255,0.1);
+    transform-style: preserve-3d;
+}
+
+.cardContainer .cardLayout .cardContent{
+    
+    text-align: center;
+    transition: 0.5s;
+    font-family: Montserrat;
+    pointer-events: none;
+    transform-style: preserve-3d;
+    
+}
+
+
+.cardContainer .cardLayout .cardContent h2{
+    position: absolute;
+    top: -60px;
+    right: 15px;
+    font-size: 5.5em;
+    color: rgba(255,255,255,0.4);
+    pointer-events: none;
+    transform-style: preserve-3d;
+    
+    
+}
+.cardContainer .cardLayout .cardContent h3{
+    font-size: 2em;
+    color: #fff;
+    z-index: 1;
+    transform: translateZ(20px);
+    transform-style: preserve-3d;
+    
+
+}
+
+.cardContainer .cardLayout .cardContent .description{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+    transform: translateZ(20px);
+    transform-style: preserve-3d;
+    
+}
+
+.cardContainer .cardLayout .cardContent .longDescription{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+    display: none;
+    margin-inline: 10px;
+    
+}
+
+
+
+.cardContainer .cardLayout .cardContent a{
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background: #fff;
+    color: #0060B5;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.cardContainer .cardLayout .cardContent img{
+    width: 140px;
+    height: auto;
+    margin: 10px;
+    transform: translateZ(35px);
+    transform-style: preserve-3d;
+    
+}
+
+.parallax-effect-glare-scale{
+    background: none !important;
+    width: 300px !important;
+    padding: 0 !important;
+    border-radius: 20px !important;
+    transform-style: preserve-3d !important;
+    transform: perspective(1000px) ;
+    
+}
+

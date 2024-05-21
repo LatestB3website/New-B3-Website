@@ -1,0 +1,171 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+      
+  }
+  
+  .canvas
+{
+    position: fixed;
+}
+.clientMain{
+	width: 100%;
+	height: 100%;
+
+.clientHero{
+    width: 100%;
+    height: 100vh;	
+
+		.clientContent{
+			height: 100vh;
+			width: 100%;
+			
+
+			.clientTitle{
+				width: max-content;
+				position: absolute;
+				padding: 20px 50px 20px 30px;
+    			margin-bottom: 2px;
+				top: 20%;
+				
+
+			h4{
+				font-family: Druk-Heavy;
+				color: white;
+				text-transform: uppercase;
+				font-size: 4.5rem;
+			}
+
+			p{
+				font-family: Montserrat;
+				color: white;
+				font-size: 1rem;
+				font-weight: 600;
+				margin-bottom: 0px;
+				text-align: center;
+			}
+		}
+
+		}
+
+   
+    
+}
+
+.clientSecondSection{
+
+	height: fit-content;
+	min-height: 100%;
+	width: 100%;
+	background-color: white;
+
+	.label{
+        display: block;
+        padding: 40px 0px 40px 0px;
+
+        .oneliner{
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 3px;
+            font-size: 4rem;
+            color: black;
+            font-family: Druk-Heavy;
+        }
+		h3{
+			text-align: center;
+			font-size: 4rem;
+			color: rgb(99,99,99);
+			font-family: Montserrat;
+		}
+        
+
+    }
+	
+
+	.clientRow1{
+		display: flex;
+		flex-direction: row;
+		margin: auto;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		
+	}
+	.clientRow2{
+		display: flex;
+		flex-direction: row;
+		margin: auto;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		
+	}
+
+	.clientRow3{
+		display: flex;
+		flex-direction: row;
+		margin: auto;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		
+	}
+	.clientRow4{
+		display: flex;
+		flex-direction: row;
+		margin: auto;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		
+	}
+}
+
+.clientThirdSection{
+	min-height: 100vh;
+	height: max-content;
+	width: 100%;
+	background-color: white;
+	margin-top: 40px;
+
+	.secondLabel{
+        display: flex;
+        padding: 40px 0px 40px 0px;
+		flex-direction: column;
+
+        .oneliner{
+            text-align: center;
+            font-size: 3rem;
+            color: black;
+            font-family: Poppins;
+			margin-bottom: 30px;
+        }
+
+		.clientLine{
+			border-top: 2.5px solid #0060b5;
+			width: 250px;
+			border-radius: 10px;
+			align-self: center;
+
+		}
+	}
+
+	.rowCards{
+		margin: auto;
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		padding-bottom: 100px;
+	}
+
+	.blockCardMain{
+		margin: 30px;
+		max-width: 320px;
+		max-height: 200px;
+		
+	}
+
+
+}
+}
+
+  

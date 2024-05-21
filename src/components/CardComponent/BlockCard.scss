@@ -1,0 +1,124 @@
+.blockCardMain{
+    
+    width: 320px;
+    height: 200px;
+
+
+    &:hover .blockContainer .blockContent {
+        .blockImage{
+            filter: blur(2px);
+            -webkit-filter: blur(2px);
+        }
+        
+        .shimmerView{
+            background-color: rgba(0, 0, 0, 0.555);
+        
+            h1{
+                left: 68%;
+                color: white;
+            }
+
+            .shimmerText{
+                h2{
+                    color: white;
+                    transform: scale(1.1);
+                }
+                h3{
+                    color: white;
+                }
+            }
+        }
+    }
+
+    
+
+    .blockContainer{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        
+
+        .blockContent{
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            position: relative;
+            margin: auto;
+            
+            .blockImage{
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 20px;
+                width: 100%;
+                height: 100%;
+                transition: all 500m;
+                -webkit-transition: all 500ms;
+                position: absolute;
+            }
+
+            .shimmerView{
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.692);
+                border-radius: 20px;
+                transition: all 500m;
+                -webkit-transition: all 500ms;
+                display: flex;
+                position: absolute;
+                
+                
+                h1{
+                    font-family: Quicksand;
+                    color: rgba(255, 255, 255, 0.6);
+                    position: relative;
+                    font-weight: 600;
+                    font-size: 5rem;
+                    left: 70%;
+                    height: fit-content;
+                    width: fit-content;
+                    transition: all 500m;
+                    -webkit-transition: all 500ms;
+
+                }
+                
+
+                    .shimmerText{
+                        position: absolute;
+                        align-self: center;
+
+                        h2{
+                            padding-left: 20px;
+                            top: 10%;
+                            font-family: Montserrat;
+                            font-size: 1.5rem;
+                            color: white;
+                            position: relative;
+                            font-weight: 600;
+                            height: fit-content;
+                            width: fit-content;
+                            transition: all 500m;
+                            -webkit-transition: all 500ms;
+                        }
+                        
+                        h3{
+                            padding-left: 20px;
+                            top: 10%;
+                            font-family: Montserrat;
+                            font-size: 1rem;
+                            color: rgba(219, 219, 219, 0.822);
+                            position: relative;
+                            font-weight: 600;
+                            height: fit-content;
+                            width: fit-content;
+                            max-width: 70%;
+                            transition: all 500m;
+                            -webkit-transition: all 500ms;
+                        }
+                }
+            }
+
+        
+        }
+        
+    }
+}
