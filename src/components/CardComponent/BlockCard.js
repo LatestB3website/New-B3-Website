@@ -3,8 +3,8 @@ import './BlockCard.scss';
 
 
 
-
 function BlockCard(props) {
+
     return (
         <div className='blockCardMain'>
             <div className='blockContainer'>
@@ -16,11 +16,11 @@ function BlockCard(props) {
                             <h2>{props.title}</h2>
                             <h3>{props.description}</h3>
                         </div>
-        
+
                     </div>
                 </div>
             </div>
-            
+
         </div>
     )
 }
