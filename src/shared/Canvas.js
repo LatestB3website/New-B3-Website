@@ -4,7 +4,7 @@ import GeometricCircle from './geometry'
 function Canvas() {
     return (
         <div id="canvas" style={{position:"absolute", backgroundColor:"#0060B5"}}>
-            <GeometricCircle/>
+            {/* <GeometricCircle/> */}
         </div>
     )
 }
