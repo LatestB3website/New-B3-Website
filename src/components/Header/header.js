@@ -44,7 +44,7 @@ function Header() {
 
   return (
     <>
-      <nav className=" bg-gradient-to-r from-blue-400 to-purple-500 to-b bg-opacity-90 h-20 flex justify-between items-center fixed z-10 top-0 w-full text-lg font-medium transition-all duration-300 shadow-lg">
+      <nav className=" navbar1 h-20 flex justify-between items-center fixed z-10 top-0 w-full text-lg font-medium transition-all duration-300 shadow-lg">
         <Link to="/" className="text-white ml-5 cursor-pointer font-montserrat no-underline text-2xl transform hover:scale-105 transition-transform duration-300" onClick={closeMobileMenu}>
           BitByBit Solutions
         </Link>
