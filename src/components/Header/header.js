@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Dropdown1, Dropdown2 } from "./Dropdown";
 import B3logof from "../../assets/images/B3logof.png";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import "./header.scss";
 
 function Header() {
   const [click, setClick] = useState(false);
@@ -44,14 +43,15 @@ function Header() {
 
   return (
     <>
-      <nav className=" navbar1 h-20 flex justify-between items-center fixed z-10 top-0 w-full text-lg font-medium transition-all duration-300 shadow-lg">
+      {/* <nav className="sticky top-4 rounded-3xl h-20 flex justify-between backdrop-blur-3xl   items-center z-10 mt-3 navbar1 mx-auto   w-[90%] m-auto text-lg font-medium transition-all duration-300 shadow-lg"> */}
+      <nav className="flex  w-[80%] fixed top-10 inset-x-0 mx-auto z-[5000] navbar1  h-[5rem] backdrop-blur-3xl rounded-full pr-2 pl-8  items-center justify-between space-x-4">
         <Link to="/" className="text-white ml-5 cursor-pointer font-montserrat no-underline text-2xl transform hover:scale-105 transition-transform duration-300" onClick={closeMobileMenu}>
           BitByBit Solutions
         </Link>
         <div className="block md:hidden absolute top-0 right-0 transform translate-y-1/2 -translate-x-full text-white text-2xl cursor-pointer" onClick={handleClick}>
           <i className={click ? "fas fa-times" : "fas fa-bars"} />
         </div>
-        <ul className={` text-white pt-3 md:flex md:items-center md:justify-end md:w-auto md:mr-8 transition-all duration-300 ${click ? 'flex flex-col w-full h-screen bg-blue-900 absolute top-20 left-0 opacity-100 transition duration-500 ease-in-out z-100' : 'hidden'}`}>
+        <ul className={`text-white pt-3 md:flex md:items-center md:justify-end md:w-auto md:mr-8 transition-all duration-300 ${click ? 'flex flex-col w-full h-screen bg-blue-900 absolute top-20 left-0 opacity-100 transition duration-500 ease-in-out z-100' : 'hidden'}`}>
           <li className="nav-item mx-4">
             <Link to="/" className="nav-link" onClick={closeMobileMenu}>
               Home

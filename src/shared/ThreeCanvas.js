@@ -98,7 +98,7 @@ const ThreeCanvas = () => {
       // Lines
       const line = new THREE.Line(
         geometry,
-        new THREE.LineBasicMaterial({ color: "#000", opacity: 0.5 })
+        new THREE.LineBasicMaterial({ color: "#", opacity: 0.5 })
       );
       scene.add(line);
 
