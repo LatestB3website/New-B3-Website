@@ -1,13 +1,20 @@
-import React from 'react'
-import GeometricCircle from './geometry'
-import ThreeCanvas from './ThreeCanvas'
+import React from "react";
+import GeometricCircle from "./geometry";
+import ThreeCanvas from "./ThreeCanvas";
 function Canvas() {
-    return (
-        <div id="canvas" style={{ position: "absolute", backgroundImage: "  linear-gradient(109.6deg, rgb(0, 182, 255) 11.2%, rgb(102, 51, 153) 91.1%)" }}>
-            {/* <GeometricCircle/> */}
-            <ThreeCanvas />
-        </div>
-    )
+  return (
+    <div
+      id="canvas"
+      style={{
+        position: "absolute",
+        backgroundImage:
+          "  linear-gradient(109.5deg, rgb(13, 11, 136) 9.4%, rgb(86, 255, 248) 78.4%)",
+      }}
+    >
+      {/* <GeometricCircle/> */}
+      <ThreeCanvas />
+    </div>
+  );
 }
 
-export default Canvas
+export default Canvas;
