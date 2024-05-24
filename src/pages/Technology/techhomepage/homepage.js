@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Canvas from "../../../shared/Canvas";
 import "./homepage.scss";
 import Footer from "../../../components/Footer/footer";
-import $ from "jquery";
 import Flipcard from "../../../components/CardComponent/FlipCard";
 import Header from "../../../components/Header/header";
 import ExpandableCard from "../../../components/CardComponent/ExpandableCard";
@@ -10,20 +9,33 @@ import SplitCard from "../../../components/CardComponent/SplitCard";
 import Image1 from "../../../assets/images/androidios.jpg";
 import Image2 from "../../../assets/images/ux.png";
 import webdevelopment from "../../../assets/images/webdev.png";
-var target = $("canvas");
-var targetHeight = target.outerHeight();
-
-$(window).on("load scroll", function () {
-  var scrollPercent = (targetHeight - window.scrollY) / targetHeight;
-  if (scrollPercent >= 0) {
-    target.css("opacity", 0.8);
-  }
-});
 
 const Homepage = () => {
+  const [showNavbar, setShowNavbar] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const footerHeight = document.querySelector(".tech-footer").offsetTop;
+      const scrollPosition = window.scrollY + window.innerHeight;
+      if (scrollPosition >= footerHeight) {
+        setShowNavbar(false);
+      } else {
+        setShowNavbar(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="techHomepageMain">
-      <Header></Header>
+      <div className={`header-container ${showNavbar ? "" : "header-hidden"}`}>
+        {showNavbar && <Header />}
+      </div>
       <div className="techpage">
         <div className="hero">
           <Canvas />
@@ -41,7 +53,7 @@ const Homepage = () => {
               <span style={{ color: "#0060b5" }}>deliver</span>
             </h1>
           </div>
-          <SplitCard></SplitCard>
+          <SplitCard />
         </div>
       </div>
 
@@ -111,4 +123,5 @@ const Homepage = () => {
     </div>
   );
 };
+
 export default Homepage;

@@ -1,6 +1,6 @@
 import "./App.css";
-import React from "react";
-import { Route, Routes } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Route, Routes, useNavigate } from "react-router-dom";
 import LandingPage from "./pages/Landing/landingPage";
 import Service from "./components/Services/Service";
 import Careers from "./pages/Careers/Careers.jsx";
@@ -18,6 +18,14 @@ import AboutUsMain from "./pages/AboutUs/AboutUsMain";
 import Homepage from "./pages/Technology/techhomepage/homepage.js";
 
 function App() {
+  function Redirect({ to }) {
+    useEffect(() => {
+      window.location.href = to;
+    }, [to]);
+
+    return null;
+  }
+
   return (
     <div>
       <Routes>
@@ -35,34 +43,25 @@ function App() {
         {/* External Links */}
         <Route
           path="/linkedin"
-          element={() => {
-            window.location.href =
-              "https://www.linkedin.com/company/bitbybit-solutions/";
-            return null;
-          }}
+          element={
+            <Redirect to="https://www.linkedin.com/company/bitbybit-solutions/" />
+          }
         />
         <Route
           path="/instagram"
-          element={() => {
-            window.location.href =
-              "https://www.instagram.com/bitbyitsolutions/";
-            return null;
-          }}
+          element={
+            <Redirect to="https://www.instagram.com/bitbyitsolutions/" />
+          }
         />
         <Route
           path="/facebook"
-          element={() => {
-            window.location.href =
-              "https://www.facebook.com/Bitbybit-Solutions-110527858156230";
-            return null;
-          }}
+          element={
+            <Redirect to="https://www.facebook.com/Bitbybit-Solutions-110527858156230" />
+          }
         />
         <Route
           path="/twitter"
-          element={() => {
-            window.location.href = "https://twitter.com/BitByBitSoluti1";
-            return null;
-          }}
+          element={<Redirect to="https://twitter.com/BitByBitSoluti1" />}
         />
       </Routes>
     </div>
