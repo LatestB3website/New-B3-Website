@@ -13,7 +13,7 @@ import {
 const Footer = () => {
   return (
     <div className="pg-footer">
-      <footer className="footer  " style={{background:"rgb(13, 11, 130)"}}>
+      <footer className="footer  " style={{ backgroundImage: "radial-gradient(circle at bottom right  , rgba(86,255,248,1) 1%, rgba(13,11,136,1) 53%)" }}>
         <div className="footer-content container mx-auto h-96 ">
           <div className="row flex flex-wrap">
             <div className="footer-col w-full sm:w-1/2 lg:w-1/4 px-4 mb-8 sm:mb-0 mt-10">
