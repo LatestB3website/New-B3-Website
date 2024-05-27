@@ -11,34 +11,30 @@ function Header() {
   const closeMobileMenu = () => setClick(false);
 
   const onMouseEnter1 = () => {
-    if (window.innerWidth < 960) {
-      setDropdown1(false);
-    } else {
+    if (window.innerWidth >= 960) {
       setDropdown1(true);
     }
   };
 
   const onMouseLeave1 = () => {
-    if (window.innerWidth < 960) {
-      setDropdown1(false);
-    } else {
-      setDropdown1(false);
-    }
+    if (window.innerWidth >= 960) {
+    //   setTimeout(() => {
+         setDropdown1(false);
+    //   }, 1000); // Add a small delay to prevent flickering
+     }
   };
 
   const onMouseEnter2 = () => {
-    if (window.innerWidth < 960) {
-      setDropdown2(false);
-    } else {
+    if (window.innerWidth >= 960) {
       setDropdown2(true);
     }
   };
 
   const onMouseLeave2 = () => {
-    if (window.innerWidth < 960) {
-      setDropdown2(false);
-    } else {
-      setDropdown2(false);
+    if (window.innerWidth >= 960) {
+      //setTimeout(() => {
+        setDropdown2(false);
+      //}, 300); // Add a small delay to prevent flickering
     }
   };
 
@@ -75,7 +71,7 @@ function Header() {
             </Link>
           </li>
           <li
-            className="nav-item mx-4"
+            className="nav-item mx-4 py-5"
             onMouseEnter={onMouseEnter1}
             onMouseLeave={onMouseLeave1}
           >
@@ -84,13 +80,21 @@ function Header() {
               className="nav-link p-1 flex items-center from-left"
               onClick={closeMobileMenu}
             >
-              Technology{" "}
-              <i className="fas fa-caret-down ml-2 transition-transform duration-300 transform hover:rotate-180" />
+              Technology
+              <i className="fas fa-caret-down ml-2 transition-transform duration-300 transform " />
             </Link>
-            {dropdown1 && <Dropdown1 />}
+            {dropdown1 && (
+              <div
+                className="dropdown-wrapper"
+                onMouseEnter={onMouseEnter1}
+                onMouseLeave={onMouseLeave1}
+              >
+                <Dropdown1 />
+              </div>
+            )}
           </li>
           <li
-            className="nav-item mx-4"
+            className="nav-item mx-4 py-5"
             onMouseEnter={onMouseEnter2}
             onMouseLeave={onMouseLeave2}
           >
@@ -99,10 +103,18 @@ function Header() {
               className="nav-link p-1 flex items-center from-left"
               onClick={closeMobileMenu}
             >
-              Recruitment{" "}
-              <i className="fas fa-caret-down ml-2 transition-transform duration-300 transform hover:rotate-180" />
+              Recruitment
+              <i className="fas fa-caret-down ml-2 transition-transform duration-300 transform " />
             </Link>
-            {dropdown2 && <Dropdown2 />}
+            {dropdown2 && (
+              <div
+                className="dropdown-wrapper"
+                onMouseEnter={onMouseEnter2}
+                onMouseLeave={onMouseLeave2}
+              >
+                <Dropdown2 />
+              </div>
+            )}
           </li>
           <li className="nav-item mx-4">
             <Link
@@ -125,7 +137,7 @@ function Header() {
           <li className="nav-item mx-4">
             <Link
               to="/careers"
-              className="nav-link  p-1 from-left"
+              className="nav-link p-1 from-left"
               onClick={closeMobileMenu}
             >
               Career
@@ -147,7 +159,7 @@ function Header() {
           height: 2px;
           bottom: 0;
           left: 0;
-          background-color: black;
+          background-color: #4f6d7a;
           transform-origin: bottom right;
           transition: transform 250ms ease-in-out;
         }

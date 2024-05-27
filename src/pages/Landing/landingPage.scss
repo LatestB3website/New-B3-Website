@@ -1,71 +1,102 @@
-.landingMain{
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #5CA4EA;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .landingMain {
     height: 100%;
     width: 100%;
-}
-
-.landingcontainer{
+  }
+  
+  .landingcontainer {
     height: 100vh;
     display: flex;
     width: 100%;
     top: 0;
     position: absolute;
-
-}
-
-.technology{
+  }
+  
+  .technology {
     flex: 1;
-    background: linear-gradient(#060E15,#0980EA);
-    transition:all 500ms ease-in-out;
-    
-    
-
-&:hover{
-    flex-grow: 1.5 ;
-    
-}
-
-.techchild{
-    background-image: url(../../assets/images/techbackground.png);
-    background-repeat: no-repeat;
-    width: inherit;
-    height: 100%;
-    background-position: center;
-    display: grid;
-    justify-items: center;
-    align-content: center;
-
-
-    .techcontent{
+    background: linear-gradient(#060E15, #0980EA);
+    transition: all 500ms ease-in-out;
+  
+    &:hover {
+      flex-grow: 1.5;
+    }
+  
+    .techchild {
+      background-image: url(../../assets/images/techbackground.png);
+      background-repeat: no-repeat;
+      width: inherit;
+      height: 100%;
+      background-position: center;
+      display: grid;
+      justify-items: center;
+      align-content: center;
+  
+      .techcontent {
         height: 100%;
         width: inherit;
         text-align: center;
         overflow: clip;
         font-size: 48px;
-
-        h1{
-
-            color: white;
-            font-family: 'Montserrat-Bold';
-            text-align: center;
-            
-            
+  
+        h1 {
+          color: white;
+          font-family: 'Montserrat-Bold';
+          text-align: center;
         }
-
-        .seeMore{
-            color: white;
-            font-family: Montserrat;
-            width: 160px;
-            height: 50px;
-            font-size: 20px;
-            border: 2px solid white;
+  
+        .seeMore {
+          position: relative;
+          width: 180px;
+          height: 60px;
+          cursor: pointer;
+          background: transparent;
+          border: 1px solid #91C9FF;
+          color: white;
+          font-family: Montserrat;
+          font-size: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: background 1s ease-in-out;
+  
+          span {
+            position: relative;
+            z-index: 1;
+          }
+  
+          svg {
+            position: absolute;
+            left: 0;
+            top: 0;
+            fill: none;
+            stroke: #fff;
+            stroke-dasharray: 150 480;
+            stroke-dashoffset: 150;
+            transition: stroke-dashoffset 1s ease-in-out;
+          }
+  
+          &:hover {
+            background: #4F95DA;
+  
+            svg {
+              stroke-dashoffset: -480;
+            }
+          }
         }
+      }
     }
-}
-
-
-
-}
-.centerLogo{
+  }
+  
+  .centerLogo {
     z-index: 100;
     background-color: transparent;
     width: 0px;
@@ -74,60 +105,82 @@
     justify-content: center;
     position: relative;
     align-items: center;
-}
-
-.recruitment{
+  }
+  
+  .recruitment {
     flex: 1;
-    background: linear-gradient(#0ACFFE,#9147EE);
-    transition:all 500ms ease-in-out;
-    
-
-    &:hover{
-        flex-grow:1.5;
+    background: linear-gradient(#0ACFFE, #9147EE);
+    transition: all 500ms ease-in-out;
+  
+    &:hover {
+      flex-grow: 1.5;
     }
-
-    .recruitmentchild{
-        background-image: url(../../assets/images/recruitmentbackground.png);
-        background-repeat: no-repeat;
-        width: inherit;
+  
+    .recruitmentchild {
+      background-image: url(../../assets/images/recruitmentbackground.png);
+      background-repeat: no-repeat;
+      width: inherit;
+      height: 100%;
+      background-position: center;
+      display: grid;
+      justify-items: center;
+      align-content: center;
+  
+      .recruitmentcontent {
         height: 100%;
-        background-position: center;
-        display: grid;
-        justify-items: center;
-        align-content: center;
-    
-    
-        .recruitmentcontent{
-            height: 100%;
-            width: inherit;
-            text-align: center;
-            overflow: clip;
-            font-size: 48px;
-    
-            h1{
-                overflow: hidden;
-                color: white;
-                font-family: 'Montserrat-Bold';
-                text-align: center;
-                
-                
-            }
-    
-            .seeMore{
-                color: white;
-                font-family: Montserrat;
-                width: 160px;
-                height: 50px;
-                font-size: 20px;
-                border: 2px solid white;
-            }
+        width: inherit;
+        text-align: center;
+        overflow: clip;
+        font-size: 48px;
+  
+        h1 {
+          overflow: hidden;
+          color: white;
+          font-family: 'Montserrat-Bold';
+          text-align: center;
         }
-    
+  
+        .seeMore {
+          position: relative;
+          width: 180px;
+          height: 60px;
+          cursor: pointer;
+          background: transparent;
+          border: 1px solid #91C9FF;
+          color: white;
+          font-family: Montserrat;
+          font-size: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: background 1s ease-in-out;
+  
+          span {
+            position: relative;
+            z-index: 1;
+          }
+  
+          svg {
+            position: absolute;
+            left: 0;
+            top: 0;
+            fill: none;
+            stroke: #fff;
+            stroke-dasharray: 150 480;
+            stroke-dashoffset: 150;
+            transition: stroke-dashoffset 1s ease-in-out;
+          }
+  
+          &:hover {
+            background: #09203F;
+            //background-image: linear-gradient(#36096D ,#09203F);
+  
+            svg {
+              stroke-dashoffset: -480;
+            }
+          }
+        }
+      }
     }
-    
-
-}
-
-
-
-
+  }
+  
