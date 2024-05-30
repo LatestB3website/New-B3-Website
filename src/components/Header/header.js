@@ -75,7 +75,7 @@ function Header() {
             </Link>
           </li>
           <li
-            className="nav-item mx-4 py-5"
+            className="nav-item mx-4"
             onMouseEnter={onMouseEnter1}
             onMouseLeave={onMouseLeave1}
           >
@@ -90,7 +90,7 @@ function Header() {
             {dropdown1 && <Dropdown1 />}
           </li>
           <li
-            className="nav-item mx-4 py-5"
+            className="nav-item mx-4"
             onMouseEnter={onMouseEnter2}
             onMouseLeave={onMouseLeave2}
           >
@@ -147,7 +147,7 @@ function Header() {
           height: 2px;
           bottom: 0;
           left: 0;
-          background-color: gray;
+          background-color: black;
           transform-origin: bottom right;
           transition: transform 250ms ease-in-out;
         }

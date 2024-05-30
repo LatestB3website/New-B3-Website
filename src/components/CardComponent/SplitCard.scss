@@ -1,108 +1,108 @@
 
-// .splitcard{
-//     box-shadow: 0 10px 50px 0 rgba(0,0,0,.085);
-//     margin: 20px;
-// }
+.splitcard{
+    box-shadow: 0 10px 50px 0 rgba(0,0,0,.085);
+    margin: 20px;
+}
 
-// .flexbox{
-//     width: 100%;
-//     margin: 0 auto;
-//     display: -webkit-flex;
-//     display: flex;
-// }
+.flexbox{
+    width: 100%;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: flex;
+}
 
-// .leftside {
+.leftside {
     
-//     background: white;
+    background: white;
 
-//     .leftcontent{
-//         padding: 20px;
+    .leftcontent{
+        padding: 20px;
 
-//         h2{
-//             font-family: Druk-Heavy;
-//             font-size: 3rem;
-//             text-transform: uppercase;
-//             color: black;
-//         }
-//         p{
-//             color: #63615e;
-//             font-family: Poppins;
-//             font-weight: 400;
-//         }
-//         .leftline{
-//             color: rgba(8, 8, 8, 0.61);
+        h2{
+            font-family: Druk-Heavy;
+            font-size: 3rem;
+            text-transform: uppercase;
+            color: black;
+        }
+        p{
+            color: #63615e;
+            font-family: Poppins;
+            font-weight: 400;
+        }
+        .leftline{
+            color: rgba(8, 8, 8, 0.61);
             
-//         }
+        }
 
-//         .cardtable{
-//             ul{
-//                 list-style-type: disc;
-//                 list-style-position: outside;
+        .cardtable{
+            ul{
+                list-style-type: disc;
+                list-style-position: outside;
                 
-//                 margin-bottom: 1.5rem;
-//                 line-height: 1.7;
-//                 color: rgba(8, 8, 8, 0.61);
+                margin-bottom: 1.5rem;
+                line-height: 1.7;
+                color: rgba(8, 8, 8, 0.61);
 
-//                 li{
-//                     list-style-type: disc;
-//                     list-style-position: outside;
-//                     margin-bottom: 0.625rem;
-//                     line-height: 1.7;
-//                     font-family: Poppins;
-//                 }
-//             }
-//         }
-//     }
-//   }
-// .rightside {
+                li{
+                    list-style-type: disc;
+                    list-style-position: outside;
+                    margin-bottom: 0.625rem;
+                    line-height: 1.7;
+                    font-family: Poppins;
+                }
+            }
+        }
+    }
+  }
+.rightside {
     
-//     background: #0060b5;
+    background: #0060b5;
 
-//     .rightcontent{
-//         padding: 20px;
+    .rightcontent{
+        padding: 20px;
 
-//         h2{
-//             font-family: Druk-Heavy;
-//             font-size: 3rem;
-//             text-transform: uppercase;
-//             color: white;
-//         }
-//         p{
-//             color: white;
-//             opacity: 0.8;
-//             font-family: Poppins;
-//             font-weight: 400;
-//         }
-//         .rightline{
-//             color: rgb(255, 255, 255);
-//             opacity: 0.6;
-//         }
+        h2{
+            font-family: Druk-Heavy;
+            font-size: 3rem;
+            text-transform: uppercase;
+            color: white;
+        }
+        p{
+            color: white;
+            opacity: 0.8;
+            font-family: Poppins;
+            font-weight: 400;
+        }
+        .rightline{
+            color: rgb(255, 255, 255);
+            opacity: 0.6;
+        }
 
-//         .cardtable{
-//             ul{
-//                 list-style-type: disc;
-//                 list-style-position: outside;
+        .cardtable{
+            ul{
+                list-style-type: disc;
+                list-style-position: outside;
                 
-//                 margin-bottom: 1.5rem;
-//                 line-height: 1.7;
-//                 color: rgb(255, 255, 255);
-//                 opacity: 0.8;
+                margin-bottom: 1.5rem;
+                line-height: 1.7;
+                color: rgb(255, 255, 255);
+                opacity: 0.8;
 
-//                 li{
-//                     list-style-type: disc;
-//                     list-style-position: outside;
-//                     margin-bottom: 0.625rem;
-//                     line-height: 1.7;
-//                     font-family: Poppins;
-//                 }
-//             }
-//         }
-//     }
-//   }
+                li{
+                    list-style-type: disc;
+                    list-style-position: outside;
+                    margin-bottom: 0.625rem;
+                    line-height: 1.7;
+                    font-family: Poppins;
+                }
+            }
+        }
+    }
+  }
 
-//   .leftside,
-//   .rightside {
-//     -webkit-flex: 1;
-//     flex: 1;
+  .leftside,
+  .rightside {
+    -webkit-flex: 1;
+    flex: 1;
     
-//   }
+  }
