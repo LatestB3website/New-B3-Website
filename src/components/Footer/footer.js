@@ -38,17 +38,17 @@ const Footer = () => {
                 </h4>
                 <ul className="footer-menu-list space-y-3">
                   <li>
-                    <a href="/" className="text-base text-white	hover:pl-2 transition-all">
+                    <a href="/" className="text-base text-gray-400 hover:text-white	hover:pl-2 transition-all">
                       Home
                     </a>
                   </li>
                   <li>
-                    <a href="/technology" className="text-base text-white hover:pl-2 transition-all">
+                    <a href="/technology" className="text-base text-gray-400 hover:text-white hover:pl-2 transition-all">
                       Technology
                     </a>
                   </li>
                   <li>
-                    <a href="/recruitment" className="text-base text-white hover:pl-2 transition-all">
+                    <a href="/recruitment" className="text-base text-gray-400 hover:text-white hover:pl-2 transition-all">
                       Recruitment
                     </a>
                   </li>
@@ -72,22 +72,22 @@ const Footer = () => {
                 </h4>
                 <ul className="footer-menu-list space-y-3">
                   <li>
-                    <a href="/Contact" className="text-base text-white  hover:pl-2 transition-all">
+                    <a href="/Contact" className="text-base text-gray-400 hover:text-white hover:pl-2 transition-all">
                       Contact
                     </a>
                   </li>
                   <li>
-                    <a href="/Careers" className="text-base text-white hover:pl-2 transition-all">
+                    <a href="/Careers" className="text-base text-gray-400 hover:text-white hover:pl-2 transition-all">
                       Careers
                     </a>
                   </li>
                   <li>
-                    <a href="/technology-clients" className="text-base text-white hover:pl-2 transition-all">
+                    <a href="/technology-clients" className="text-base text-gray-400 hover:text-white hover:pl-2 transition-all">
                       Technology Clients
                     </a>
                   </li>
                   <li>
-                    <a href="/recruitment-clients" className="text-base text-white hover:pl-2 transition-all">
+                    <a href="/recruitment-clients" className="text-base text-gray-400 hover:text-white hover:pl-2 transition-all">
                       Recruitment Clients
                     </a>
                   </li>
@@ -111,12 +111,12 @@ const Footer = () => {
                 </h4>
                 <ul className="footer-menu-list space-y-3">
                   <li>
-                    <a href="/technology-services" className="text-base text-white hover:pl-2 transition-all">
+                    <a href="/technology-services" className="text-base text-gray-400 hover:text-white hover:pl-2 transition-all">
                       Technology Services
                     </a>
                   </li>
                   <li>
-                    <a href="/recruitment-services" className="text-base text-white hover:pl-2 transition-all">
+                    <a href="/recruitment-services" className="text-base text-gray-400 hover:text-white hover:pl-2 transition-all">
                       Recruitment Services
                     </a>
                   </li>
@@ -139,7 +139,7 @@ const Footer = () => {
                   ></span>
                 </h4>
                 <p className="footer-call-to-action-link-wrapper ">
-                  <a href="tel:0124-64XXXX" className="text-base text-white  hover:pl-2  transition-all">
+                  <a href="tel:0124-64XXXX" className="text-base text-gray-400 hover:text-white hover:pl-2  transition-all">
                     (+91) 022 65510355
                   </a>
                 </p>
@@ -158,7 +158,7 @@ const Footer = () => {
                     }}
                   ></span>
                 </h4>
-                <p className="text-base text-white">
+                <p className="text-base text-gray-400">
                   912 | 1st Floor | Building No 9 | Solitaire Corporate Park | Andheri Kurla Road | Chakala | Andheri (East) | Mumbai - 400 093
                 </p>
               </div>

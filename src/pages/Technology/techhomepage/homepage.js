@@ -15,10 +15,8 @@ const Homepage = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const footer = document.querySelector(".tech-footer");
-      const footerHeight = footer.offsetTop;
+      const footerHeight = document.querySelector(".tech-footer").offsetTop;
       const scrollPosition = window.scrollY + window.innerHeight;
-
       if (scrollPosition >= footerHeight) {
         setShowNavbar(false);
       } else {
@@ -36,12 +34,12 @@ const Homepage = () => {
   return (
     <div className="techHomepageMain">
       <div className={`header-container ${showNavbar ? "" : "header-hidden"}`}>
-        <Header />
+        {showNavbar && <Header />}
       </div>
       <div className="techpage">
         <div className="hero">
           <Canvas />
-          <div className="content" id="techcontent">
+          <div class="content" id="techcontent">
             <h4>BitByBit Solutions</h4>
             <p>Development Services with cutting edge technology.</p>
           </div>
@@ -59,9 +57,65 @@ const Homepage = () => {
         </div>
       </div>
 
-      {/* <div className="third-section  ">
+      <div className="third-section">
+        <div className="row">
+          <h2>Related Services</h2>
+          <div className="icon-card__container small-12">
+            <div className="small-12 medium-4 columns icon-card icon-card--large">
+              <div className="card-content">
+                <div className="icon-border-bottom">
+                  <img src={Image1} alt=""></img>
+                  <div className="icon-card__description">
+                    <h4 className="icon-card__title icon-card__title--expanded">
+                      Mobile Applications Development
+                    </h4>
+                    <p className="small text-center">
+                      For business and consumer apps that work across apple and
+                      android devices and consume services from the cloud.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="small-12 medium-4 columns icon-card icon-card--large">
+              <div className="card-content-blue">
+                <div className="icon-border-bottom">
+                  <img
+                    src={webdevelopment}
+                    alt=""
+                    style={{ marginBottom: "40px" }}
+                  ></img>
+                  <div className="icon-card__description">
+                    <h4 className="icon-card__title icon-card__title--expanded">
+                      Web Development
+                    </h4>
+                    <p className="small text-center">
+                      Developing robust & asthetically pleasing web-apps that
+                      work as good as they look.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="small-12 medium-4 columns icon-card icon-card--large">
+              <div className="card-content">
+                <div className="icon-border-bottom">
+                  <img src={Image2} alt=""></img>
+                  <div className="icon-card__description">
+                    <h4 className="icon-card__title icon-card__title--expanded">
+                      UI & UX Design & Development
+                    </h4>
+                    <p className="small text-center">
+                      Designing attractive & equally functional UI/UX using
+                      latest frameworks that lights up the eyes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-         */}
+      </div>
 
       <div className="tech-footer">
         <Footer />
