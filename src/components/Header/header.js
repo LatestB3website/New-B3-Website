@@ -59,11 +59,10 @@ function Header() {
           <i className={click ? "fas fa-times" : "fas fa-bars"} />
         </div>
         <ul
-          className={`text-white pt-3 md:flex md:items-center md:justify-end md:w-auto md:mr-8 transition-all duration-300 ${
-            click
-              ? "flex flex-col w-full h-screen bg-blue-900 absolute top-20 left-0 opacity-100 transition duration-500 ease-in-out z-100"
-              : "hidden"
-          }`}
+          className={`text-white pt-3 md:flex md:items-center md:justify-end md:w-auto md:mr-8 transition-all duration-300 ${click
+            ? "flex flex-col w-full h-screen bg-blue-900 absolute top-20 left-0 opacity-100 transition duration-500 ease-in-out z-100"
+            : "hidden"
+            }`}
         >
           <li className="nav-item mx-4">
             <Link
@@ -75,7 +74,7 @@ function Header() {
             </Link>
           </li>
           <li
-            className="nav-item mx-4"
+            className="nav-item mx-4 py-5"
             onMouseEnter={onMouseEnter1}
             onMouseLeave={onMouseLeave1}
           >
@@ -90,7 +89,7 @@ function Header() {
             {dropdown1 && <Dropdown1 />}
           </li>
           <li
-            className="nav-item mx-4"
+            className="nav-item mx-4 py-5"
             onMouseEnter={onMouseEnter2}
             onMouseLeave={onMouseLeave2}
           >
