@@ -2,19 +2,19 @@ import React, { Component } from 'react';
 import 'tailwindcss/tailwind.css'; // Ensure Tailwind CSS is imported
 import webdevelop from '../../assets/images/webdevloper.png'
 import MobileDevelopment from '../../assets/images/Mobile Development.png'
-import './SplitCard.scss'
+
 export default class SplitCard extends Component {
     render() {
         return (
-            <div className="flex flex-col items-center h-auto gradient-background">
-
+            <div className="flex flex-col items-center h-auto">
+              
                 {/* First Container */}
                 <div className="w-[75%] flex justify-center relative">
                     <div className='font-extrabold hover:scale-105 translate-all duration-500 h-3/4 w-[20%] mt-10 shadow-2xl flex justify-center items-center text-center absolute left-0'>
-                        WE <br /> DESIGN
+                        WE <br/> DESIGN
                     </div>
                     <div className="absolute left-[90%] top-10 z-10 justify-center shadow-lg h-72 lg:h-72 w-72 lg:w-1/4 rounded-xl hover:-translate-y-6 transition-all duration-500">
-                        <img src={webdevelop} className='h-full rounded-xl' />
+                        <img src={webdevelop} className='h-full rounded-xl'/>
                     </div>
 
                     <div className="bg-white w-[90%] relative left-[16%] shadow-2xl p-6 rounded-xl transform transition-all duration-300">
@@ -39,10 +39,10 @@ export default class SplitCard extends Component {
                 {/* Second Container */}
                 <div className="w-[75%] flex justify-center relative mt-10">
                     <div className='font-extrabold hover:scale-105 translate-all duration-500 h-3/4 w-[20%] mt-10 shadow-2xl flex justify-center items-center text-center absolute right-0'>
-                        WE <br /> DEVELOP
+                    WE <br/> DEVELOP
                     </div>
                     <div className="absolute right-[90%] top-10 z-10 justify-center shadow-lg h-72 lg:h-72 w-72 lg:w-1/4 rounded-xl hover:-translate-y-6 transition-all duration-500">
-                        <img src={MobileDevelopment} className='h-full rounded-xl' />
+                        <img src={MobileDevelopment} className='h-full rounded-xl'/>
                     </div>
 
                     <div className="bg-white w-[90%] relative right-[16%] shadow-2xl p-6 rounded-xl transform transition-all duration-300">
@@ -65,15 +65,15 @@ export default class SplitCard extends Component {
                     </div>
                 </div>
 
-
+               
 
                 {/* Third Container */}
                 <div className="w-[75%] flex justify-center relative m-5">
                     <div className='font-extrabold hover:scale-105 translate-all duration-500 h-3/4 w-[20%] mt-10 shadow-2xl flex justify-center items-center text-center absolute left-0'>
-                        WE <br /> DELIVER
+                        WE <br/> DELIVER
                     </div>
                     <div className="absolute left-[90%] top-10 z-10 justify-center shadow-lg h-72 lg:h-72 w-72 lg:w-1/4 rounded-xl hover:-translate-y-6 transition-all duration-500">
-                        <img src={webdevelop} className='h-full rounded-xl' />
+                        <img src={webdevelop} className='h-full rounded-xl'/>
                     </div>
 
                     <div className="bg-white w-[90%] relative left-[16%] shadow-2xl p-6 rounded-xl transform transition-all duration-300">
