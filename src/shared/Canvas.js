@@ -7,8 +7,7 @@ function Canvas() {
       id="canvas"
       style={{
         position: "absolute",
-        backgroundImage:
-          "  linear-gradient(109.5deg, rgb(13, 11, 136) 9.4%, rgb(86, 255, 248) 78.4%)",
+        backgroundColor: "rgb(0, 96, 181)"
       }}
     >
       {/* <GeometricCircle/> */}
