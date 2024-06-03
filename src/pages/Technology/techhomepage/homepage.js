@@ -58,36 +58,36 @@ const Homepage = () => {
         
         <div class='multi_box'>
           <div className="boxes w-[12%]  py-5" >
-          <div className=" flex flex-row justify-around">
+          <div className=" flex flex-row justify-around items-center">
             <p class='box_p1'>+50</p>
-            <img src={contact} className="pt-1 h-8" />
+            <img src={contact} className=" h-6" />
           </div>
           <p className="box_p2 pl-5">EMPLOYEES ON BOARD</p>
           </div>
           {/* ................................................................ */}
 
           <div className="boxes w-[12%]  py-5" >
-          <div className=" flex flex-row justify-around">
+          <div className=" flex flex-row justify-around items-center">
             <p class='box_p1'>+50</p>
-            <img src={dimond} className="pt-1 h-8" />
+            <img src={dimond} className=" h-6" />
           </div>
           <p className="box_p2 pl-5">YEARS ON THE MARKET</p>
           </div>
           {/* ................................................................ */}
 
           <div className="boxes w-[12%]  py-5" >
-          <div className=" flex flex-row justify-around">
+          <div className=" flex flex-row justify-around items-center">
             <p class='box_p1'>+50</p>
-            <img src={contact} className="pt-1 h-8" />
+            <img src={contact} className=" h-6" />
           </div>
           <p className="box_p2 pl-5">ACTIVE USERS OF OUR APPS</p>
           </div>
           {/* ................................................................ */}
 
           <div className="boxes w-[12%]  py-5" >
-          <div className=" flex flex-row justify-around">
+          <div className=" flex flex-row justify-around items-center">
             <p class='box_p1'>4.7</p>
-            <img src={star} className="pt-1 h-8"/>
+            <img src={star} className=" h-6"/>
           </div>
           <p className="box_p2 pl-5">CLUTCH RATING</p>
           </div>
