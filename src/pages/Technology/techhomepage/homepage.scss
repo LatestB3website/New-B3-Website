@@ -283,7 +283,7 @@
 
 .home_h1{
     font-weight: bolder;
-    font-size:49px;
+    font-size:45px;
     line-height:57px;
     color: #0c0042;
     font-family: Montserrat, helvetica neue, helvetica, arial, sans-serif;
@@ -321,7 +321,8 @@ background-color: #0057ff;
 }
 .multi_box{
     display: flex;
-    justify-content:space-around;
+    justify-content:center;
+    gap: 100px;
    // background-color: antiquewhite;
     margin: 15px;
 }
