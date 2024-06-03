@@ -1,12 +1,21 @@
 import React, { useState } from "react";
 import { Dropdown1, Dropdown2 } from "./Dropdown";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import B3logof from "../../assets/images/B3logof.png";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useParams,
+  Redirect,
+} from "react-router-dom";
+import "./header.scss";
+import { } from "react-router";
 
 function Header() {
   const [click, setClick] = useState(false);
   const [dropdown1, setDropdown1] = useState(false);
   const [dropdown2, setDropdown2] = useState(false);
-
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
@@ -25,7 +34,6 @@ function Header() {
       setDropdown1(false);
     }
   };
-
   const onMouseEnter2 = () => {
     if (window.innerWidth < 960) {
       setDropdown2(false);
@@ -44,113 +52,83 @@ function Header() {
 
   return (
     <>
-      <nav className="flex w-[80%] fixed top-10 inset-x-0 mx-auto z-[5000] navbar1 h-[5rem] bg-blue-500 rounded-full pr-2 pl-8 items-center justify-between space-x-4">
-        <Link
-          to="/"
-          className="text-white ml-5 cursor-pointer font-montserrat no-underline text-2xl transform hover:scale-105 transition-transform duration-300"
-          onClick={closeMobileMenu}
-        >
+      <nav className="header-navbar">
+        <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
           BitByBit Solutions
+          {/* <img src={B3logof} alt="b3logo" height="70px" width="70px"></img> */}
         </Link>
-        <div
-          className="block md:hidden absolute top-0 right-0 transform translate-y-1/2 -translate-x-full text-white text-2xl cursor-pointer"
-          onClick={handleClick}
-        >
+        <div className="menu-icon" onClick={handleClick}>
           <i className={click ? "fas fa-times" : "fas fa-bars"} />
         </div>
-        <ul
-          className={`text-white pt-3 md:flex md:items-center md:justify-end md:w-auto md:mr-8 transition-all duration-300 ${click
-            ? "flex flex-col w-full h-screen bg-blue-900 absolute top-20 left-0 opacity-100 transition duration-500 ease-in-out z-100"
-            : "hidden"
-            }`}
-        >
-          <li className="nav-item mx-4">
-            <Link
-              to="/"
-              className="nav-link from-left p-1"
-              onClick={closeMobileMenu}
-            >
+        <ul className={click ? "nav-menu active" : "nav-menu"}>
+          <li className="nav-item">
+            <Link to="/" className="nav-links" onClick={closeMobileMenu}>
               Home
             </Link>
           </li>
           <li
-            className="nav-item mx-4 py-5"
+            className="nav-item"
             onMouseEnter={onMouseEnter1}
             onMouseLeave={onMouseLeave1}
           >
             <Link
               to="/technology"
-              className="nav-link p-1 flex items-center from-left"
+              className="nav-links"
               onClick={closeMobileMenu}
             >
-              Technology{" "}
-              <i className="fas fa-caret-down ml-2 transition-transform duration-300 transform hover:rotate-180" />
+              Technology <i class="fas fa-caret-down" />
             </Link>
             {dropdown1 && <Dropdown1 />}
           </li>
           <li
-            className="nav-item mx-4 py-5"
+            className="nav-item"
             onMouseEnter={onMouseEnter2}
             onMouseLeave={onMouseLeave2}
           >
             <Link
               to="/recruitment"
-              className="nav-link p-1 flex items-center from-left"
+              className="nav-links"
               onClick={closeMobileMenu}
             >
-              Recruitment{" "}
-              <i className="fas fa-caret-down ml-2 transition-transform duration-300 transform hover:rotate-180" />
+              Recruitment <i class="fas fa-caret-down" />
             </Link>
             {dropdown2 && <Dropdown2 />}
           </li>
-          <li className="nav-item mx-4">
-            <Link
-              to="/contact"
-              className="nav-link p-1 from-left"
-              onClick={closeMobileMenu}
-            >
+          <li className="nav-item">
+            <Link to="/contact" className="nav-links" onClick={closeMobileMenu}>
               Contact
             </Link>
           </li>
-          <li className="nav-item mx-4">
-            <Link
-              to="/aboutus"
-              className="nav-link p-1 from-left"
-              onClick={closeMobileMenu}
-            >
+          <li className="nav-item">
+            <Link to="/aboutus" className="nav-links" onClick={closeMobileMenu}>
               About Us
             </Link>
           </li>
-          <li className="nav-item mx-4">
-            <Link
-              to="/careers"
-              className="nav-link  p-1 from-left"
-              onClick={closeMobileMenu}
-            >
+          <li className="nav-item">
+            <Link to="/careers" className="nav-links" onClick={closeMobileMenu}>
               Career
             </Link>
           </li>
         </ul>
       </nav>
-
       <style jsx>{`
-        .nav-link {
+        .nav-links {
           position: relative;
           display: inline-block;
         }
-        .nav-link:after {
+        .nav-links:after {
           content: "";
           position: absolute;
           width: 100%;
           transform: scaleX(0);
-          height: 2px;
+          height: 3px;
           bottom: 0;
           left: 0;
-          background-color: black;
+          background-color: blue;
           transform-origin: bottom right;
           transition: transform 250ms ease-in-out;
         }
-        .nav-link:hover:after {
+        .nav-links:hover:after {
           transform: scaleX(1);
           transform-origin: bottom left;
         }
@@ -158,5 +136,6 @@ function Header() {
     </>
   );
 }
+
 
 export default Header;
