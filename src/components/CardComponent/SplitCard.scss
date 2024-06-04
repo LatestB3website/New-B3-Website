@@ -136,7 +136,12 @@
 
 .containt:hover .smallcontaint{
     color: #002eff;
+    transition: 0.3s ease-in-out all;
+
   
-    
+}
+.containt:hover .parentDiv{
+    transition: 0.3s ease-in-out all;
+    border:2px solid #002eff
   
 }
