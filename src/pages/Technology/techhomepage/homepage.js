@@ -176,7 +176,8 @@ const Homepage = () => {
           </div>
         </div>
       </div> */}
-      <h1 class='mainh1'> Industries we deal with</h1>
+      <h1 className='mainh1'> Industries we deal with</h1>
+      <span className="for_underline block    -bottom-2 "></span>
       <div className="  flex  w-full h-auto p-10">
         <div className=" flex flex-col   w-auto h-auto ">
           <div className="flex gap-5 justify-center mr-[20%]">
@@ -184,7 +185,7 @@ const Homepage = () => {
               <h1 className="titleh1 text-center m-3 pl-4">Banking, Financial Services and Insurance (BFSI)</h1>
               <div className="flex h-auto gap-2 ">
                 <img src={bank} className="h-11 ml-2" />
-                <p>We have extensive experience in developing secure and efficient software solutions for the BFSI sector. Our services include financial transactions management, risk assessment systems, customer relationship management, and regulatory compliance solutions.</p>
+                <p >We have extensive experience in developing secure and efficient software solutions for the BFSI sector. Our services include financial transactions management, risk assessment systems, customer relationship management, and regulatory compliance solutions.</p>
               </div>
             </div>
 
@@ -192,7 +193,7 @@ const Homepage = () => {
               <h1 className="titleh1 text-center  m-3 pl-4">E-Gov & E-Com</h1>
               <div className="flex h-auto gap-3">
                 <img src={ecom} className="h-11 ml-1" />
-                <p>We offer comprehensive e-Governance and e-Commerce solutions. Our services include ticket booking, recharges, money transfers, withdrawals, Aadhaar enrolments, and online order booking with Amazon. We also provide Ayushman Bharat-PMJAY, insurance purchases, PAN applications, utility bill payments, GST return filing, and DSC applications. Additionally, we integrate shopping carts, payment gateways, customer management, inventory management, and data analytics to help businesses and government agencies sell products or services online efficiently. </p>
+                <p >We offer comprehensive e-Governance and e-Commerce solutions, including ticket booking, recharges, money transfers, Aadhaar enrolments, Amazon orders, insurance purchases, utility bill payments, and more, with features like shopping cart integration, payment gateways, customer management, and data analytics for seamless online transactions.</p>
               </div>
             </div>
           </div>
@@ -202,7 +203,7 @@ const Homepage = () => {
               <h1 className="titleh1 text-center m-3 pl-4">HealthCare</h1>
               <div className="flex h-auto gap-3">
                 <img src={healthcare} className="h-11 ml-1" />
-                <p>We offer a wide range of healthcare IT solutions including electronic health records (EHR) systems, appointment scheduling software, telemedicine platforms, and healthcare data analytics. Our solutions are designed to improve patient care and streamline healthcare operations. </p>
+                <p >We offer a wide range of healthcare IT solutions including electronic health records (EHR) systems, appointment scheduling software, telemedicine platforms, and healthcare data analytics. Our solutions are designed to improve patient care and streamline healthcare operations. </p>
 
               </div>
             </div>
@@ -211,7 +212,7 @@ const Homepage = () => {
               <h1 className="titleh1 text-center m-3 pl-4">Hospitality</h1>
               <div className="flex h-auto gap-3">
                 <img src={Hospitality} className="h-11 ml-1" />
-                <p>Our hospitality software solutions include property management systems (PMS), booking and reservation systems, customer relationship management (CRM) software, and point of sale (POS) systems. These tools help hospitality businesses improve customer service and streamline operations. We use our industry expertise to provide customized solutions that address specific client needs. By keeping up with the latest trends and technologies, we ensure our clients stay ahead of the curve. </p>
+                <p >Our hospitality software solutions include property management systems (PMS), booking and reservation systems, CRM software, and POS systems to enhance customer service and optimize operations. We use our industry expertise to provide tailored solutions and stay updated on the latest trends and technologies to keep our clients ahead of the curve.</p>
               </div>
             </div>
           </div>

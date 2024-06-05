@@ -348,17 +348,29 @@ background-color: #0057ff;
 }
 // ..........................................................
 .mainh1{
-    text-align: center;
-    font-size: 50px;
+     text-align: center;
+     color: #0c0042;
+    //background-color: #0057ff;
+    width: 52%;
+    font-size: 40px !important; 
+    font-weight: 700 !important; 
     margin: 5px;
-    font-family: Montserrat, helvetica neue, helvetica, arial, sans-serif;
-    
+    font-family: Montserrat, helvetica neue, helvetica, arial, sans-serif;   
+}
+.for_underline{
+    background-color: #002eff;
+    border-radius: 5px;
+    width: 8%;
+    height: 5px;
+    margin-left: 9%;
 }
 .d1{
     border-radius: 8px;
     padding: 8px;
-     //background-color: lightblue;
+    font-family: Montserrat, helvetica neue, helvetica, arial, sans-serif;
+    font-size: 16px !important; 
      height: 95%;
+     transform: scaleY(0.9);
      box-shadow: rgba(255, 0, 0, 0.4) 5px 5px, rgba(247, 54, 54, 0.3) 10px 10px, rgba(248, 78, 78, 0.2) 15px 15px, rgba(221, 30, 30, 0.1) 20px 20px, rgba(218, 26, 26, 0.05) 25px 25px;
 }
 .d11{
@@ -378,7 +390,10 @@ color: #ffffff;
     color: #000000;
 }
 .titleh1{
-font-size: 16px;
-font-weight: bold;
-text-decoration:3px underline gray;
+    
+    font-size: 24px !important; 
+    font-weight: 700 !important; 
+    text-decoration:3px underline gray;
+    font-family: Montserrat, helvetica neue, helvetica, arial, sans-serif;
+
 }
