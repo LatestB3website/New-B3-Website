@@ -2,9 +2,9 @@
 //     -webkit-box-sizing: border-box;
 //     -moz-box-sizing: border-box;
 //     box-sizing: border-box;
-      
+
 //   }
-  
+
 
 // .canvas
 // {
@@ -17,12 +17,12 @@
 // .hero{
 //     width: 100%;
 //     height: 100vh;
-   
+
 //     h1{
 //         font-family: Montserrat;
 //         color: white;
 //         font-size: 2rem;
-        
+
 //     }
 //     .content h4{
 //         font-family: Druk-Heavy;
@@ -54,7 +54,7 @@
 //             color: black;
 //             font-family: Druk-Heavy;
 //         }
-        
+
 
 //     }
 
@@ -113,7 +113,7 @@
 //                 padding-bottom: 1.875rem;
 //                 flex: 1;
 //                 margin: 0px 20px 0 20px;
-                
+
 
 //                 &:hover .card-content{
 //                     box-shadow: 0 15px 50px 0 rgba(0,0,0,.15);
@@ -236,28 +236,28 @@
 //     width: 100%;
 // }
 // #techcontent {
-    
+
 //     // background: rgba(26, 44, 116, 0);
 //     // border: 1px solid rgba(255, 255, 255, 0);
 //     // border-radius: 3px;
 //     // backdrop-filter: blur(2px);
 //     padding: 20px 50px 20px 30px;
 //     margin-bottom: 2px;
-  
+
 //     h1{
 //         font-weight: 700;
 //         font-size: 3rem;
 //         text-transform: uppercase;
 //     }
-    
+
 //   position: absolute;
 //   top: 35%;
 //   transform: translateY(-50%);
 //   color: #FFF;
 //   font-weight: 600;
 //   font-family: Montserrat;
-  
-  
+
+
 
 //   p{
 //       letter-spacing: 0px;
@@ -281,25 +281,27 @@
 //      overflow: "hidden"
 // }
 
-.home_h1{
+.home_h1 {
     font-weight: bolder;
-    font-size:45px;
-    line-height:57px;
+    font-size: 45px;
+    line-height: 57px;
     color: #0c0042;
     font-family: Montserrat, helvetica neue, helvetica, arial, sans-serif;
     padding-bottom: 18px;
 }
-.home_p{
+
+.home_p {
     font-family: Montserrat, helvetica neue, helvetica, arial, sans-serif;
     font-size: 16px !important;
     line-height: 28px !important;
-    overflow-wrap: break-word; 
-     word-break: break-word; 
-      white-space: normal; 
-      color: #0c0042;
-      padding-right: 70px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+    color: #0c0042;
+    padding-right: 70px;
 }
-.lets_talk{
+
+.lets_talk {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -312,33 +314,39 @@
     font-weight: 700;
     height: 44px;
     line-height: 24px;
-    width:25%;
+    width: 25%;
     gap: 10px;
-   // padding: 8px 14px 8px 46px;
+    // padding: 8px 14px 8px 46px;
 }
-.lets_talk:hover{
-background-color: #0057ff;
+
+.lets_talk:hover {
+    background-color: #0057ff;
 }
-.multi_box{
+
+.multi_box {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     gap: 100px;
-   // background-color: antiquewhite;
+    // background-color: antiquewhite;
     margin: 15px;
 }
-.boxes{
-   // background-color: aqua;
+
+.boxes {
+    // background-color: aqua;
     border-radius: 15px;
-    box-shadow:  0 0 10px rgba(0, 0, 0, .13);;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .13);
+    ;
 }
-.box_p1{
+
+.box_p1 {
     color: #008bff;
     font-size: 28px;
     font-style: normal;
     font-weight: 700;
     font-family: Montserrat, helvetica neue, helvetica, arial, sans-serif;
 }
-.box_p2{
+
+.box_p2 {
     color: #0c0042;
     font-family: Montserrat, helvetica neue, helvetica, arial, sans-serif;
     font-size: 12px;
@@ -346,49 +354,125 @@ background-color: #0057ff;
     line-height: 14px;
     margin-top: .5rem;
 }
+
 // ..........................................................
-.mainh1{
-     text-align: center;
-     color: #0c0042;
+.mainh1 {
+    text-align: center;
+    color: #0c0042;
     //background-color: #0057ff;
     width: 52%;
-    font-size: 40px !important; 
-    font-weight: 700 !important; 
+    font-size: 40px !important;
+    font-weight: 700 !important;
     margin: 5px;
-    font-family: Montserrat, helvetica neue, helvetica, arial, sans-serif;   
+    font-family: Montserrat, helvetica neue, helvetica, arial, sans-serif;
 }
 
-.d1{
+.d1 {
     border-radius: 8px;
     padding: 8px;
     font-family: Montserrat, helvetica neue, helvetica, arial, sans-serif;
-    font-size: 16px !important; 
-     height: 95%;
-     transform: scaleY(0.9);
-     box-shadow: rgba(255, 0, 0, 0.4) 5px 5px, rgba(247, 54, 54, 0.3) 10px 10px, rgba(248, 78, 78, 0.2) 15px 15px, rgba(221, 30, 30, 0.1) 20px 20px, rgba(218, 26, 26, 0.05) 25px 25px;
+    font-size: 16px !important;
+    height: 95%;
+    transform: scaleY(0.9);
+    box-shadow: rgba(255, 0, 0, 0.4) 5px 5px, rgba(247, 54, 54, 0.3) 10px 10px, rgba(248, 78, 78, 0.2) 15px 15px, rgba(221, 30, 30, 0.1) 20px 20px, rgba(218, 26, 26, 0.05) 25px 25px;
 }
 
-.d11{
-background-color: #d30f12;
-color: #ffffff;
+
+.d1 {
+    border-radius: 8px;
+    padding: 8px;
+    font-family: Montserrat, helvetica neue, helvetica, arial, sans-serif;
+    font-size: 16px !important;
+    height: 95%;
+    transform: scaleY(0.9);
+    transition: all ease-in-out 0.3s;
+    // box-shadow: rgba(255, 0, 0, 0.4) 5px 5px, rgba(247, 54, 54, 0.3) 10px 10px, rgba(248, 78, 78, 0.2) 15px 15px, rgba(221, 30, 30, 0.1) 20px 20px, rgba(218, 26, 26, 0.05) 25px 25px;
 }
-.d12{
-    background-color: #fdf0d5;
-    color: #020202;
-}
-.d13{
-    background-color:#003049;
+
+.d11 {
+    box-shadow: rgba(211, 15, 18, 0.4) 5px 5px, rgba(211, 15, 18, 0.3) 10px 10px, rgba(211, 15, 18, 0.2) 15px 15px, rgba(211, 15, 18, 0.1) 20px 20px, rgba(211, 15, 18, 0.05) 25px 25px;
+    background-color: #d30f12;
+    /* Red background */
     color: #ffffff;
 }
-.d14{
-    background-color: #ffd500;
+
+.d12 {
+    box-shadow: rgba(255, 71, 74, 0.505) 5px 5px, rgba(255, 90, 93, 0.5) 10px 10px, rgba(255, 84, 86, 0.4) 15px 15px, rgba(211, 15, 18, 0.3) 20px 20px, rgba(211, 15, 18, 0.2) 25px 25px;
+    background-color: #fdf0d5;
+    /* Cream background */
+    color: #020202;
+}
+
+
+.d13 {
+    box-shadow: rgba(0, 48, 73, 0.4) 5px 5px, rgba(0, 48, 73, 0.3) 10px 10px, rgba(0, 48, 73, 0.2) 15px 15px, rgba(0, 48, 73, 0.1) 20px 20px, rgba(0, 48, 73, 0.05) 25px 25px;
+    background-color: #003049;
+    /* Blue background */
+    color: #ffffff;
+}
+
+.d14 {
+    box-shadow: rgba(255, 213, 0, 0.6) 5px 5px, rgba(255, 213, 0, 0.5) 10px 10px, rgba(255, 213, 0, 0.4) 15px 15px, rgba(255, 213, 0, 0.3) 20px 20px, rgba(255, 213, 0, 0.2) 25px 25px;
+    background-color: #ffd500c7;
+    /* Yellow background */
     color: #000000;
 }
-.titleh1{
-    
-    font-size: 24px !important; 
-    font-weight: 700 !important; 
-    
+
+.titleh1 {
+
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    text-decoration: 3px underline gray;
     font-family: Montserrat, helvetica neue, helvetica, arial, sans-serif;
 
+}
+
+/* Hover animation for d11 */
+.d11:hover {
+    background-color: #ff3b3e;
+    /* Lighter red */
+    /* Lighter white */
+    box-shadow: none;
+    /* Remove shadow */
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    /* Transition properties */
+}
+
+/* Hover animation for d12 */
+.d12:hover {
+    background-color: #ffde83;
+    /* Lighter cream */
+    /* Lighter grey */
+    box-shadow: none;
+    /* Remove shadow */
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    /* Transition properties */
+}
+
+/* Hover animation for d13 */
+.d13:hover {
+    background-color: #136d93;
+    /* Lighter blue */
+    /* Lighter white */
+    box-shadow: none;
+    /* Remove shadow */
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    /* Transition properties */
+}
+
+/* Hover animation for d14 */
+.d14:hover {
+    background-color: #ffbf00;
+    /* Lighter yellow */
+    /* Lighter grey */
+    box-shadow: none;
+    /* Remove shadow */
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    /* Transition properties */
+}
+
+.titleh1 {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: 3px underline gray;
 }
