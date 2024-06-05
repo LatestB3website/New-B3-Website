@@ -18,6 +18,7 @@ import bank from "../../../assets/images/bankingicon.png"
 import ecom from "../../../assets/images/egovandecomicon.png"
 import healthcare from "../../../assets/images/healthcare.png"
 import Hospitality from "../../../assets/images/hospitality.png"
+import Aos from "aos";
 const Homepage = () => {
   const [showNavbar, setShowNavbar] = useState(true);
 
@@ -176,11 +177,13 @@ const Homepage = () => {
           </div>
         </div>
       </div> */}
+
       <h1 className='mainh1'> Industries we deal with</h1>
       <span className="for_underline block    -bottom-2 "></span>
       <div className="  flex  w-full h-auto p-10">
         <div className=" flex flex-col   w-auto h-auto ">
-          <div className="flex gap-5 justify-center mr-[20%]">
+          <div className="flex gap-5 justify-center mr-[20%] ease-in-out" data-aos="fade-right"
+          data-aos-duration="15000">
             <div className="d1 d11 w-[40%]  m-5 ">
               <h1 className="titleh1 text-center m-3 pl-4">Banking, Financial Services and Insurance (BFSI)</h1>
               <div className="flex h-auto gap-2 ">
@@ -198,7 +201,8 @@ const Homepage = () => {
             </div>
           </div>
           {/* ........................................................ */}
-          <div className="flex gap-5 justify-end mr-[10%] ">
+          <div className="flex gap-5 justify-end mr-[10%] ease-in-out " data-aos="fade-left"
+          data-aos-duration="15000">
             <div className="d1 d13 w-[35%]  m-5">
               <h1 className="titleh1 text-center m-3 pl-4">HealthCare</h1>
               <div className="flex h-auto gap-3">
