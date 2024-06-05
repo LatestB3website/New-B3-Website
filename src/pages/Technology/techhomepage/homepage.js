@@ -179,8 +179,8 @@ const Homepage = () => {
       </div> */}
 
       <h1 className='mainh1'> Industries we deal with</h1>
-      
-      <span className="for_underline block    -bottom-2 "></span>
+
+      <span className="w-[8%] h-[5px] ml-[9%] block rounded-b-[5px]" style={{backgroundColor:'#002eff'}}></span>
       <div className="  flex  w-full h-auto p-10">
         <div className=" flex flex-col   w-auto h-auto ">
           <div className="flex gap-5 justify-center mr-[20%] " data-aos="fade-right"
