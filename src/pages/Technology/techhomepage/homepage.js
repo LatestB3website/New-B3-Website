@@ -182,8 +182,8 @@ const Homepage = () => {
       <span className="for_underline block    -bottom-2 "></span>
       <div className="  flex  w-full h-auto p-10">
         <div className=" flex flex-col   w-auto h-auto ">
-          <div className="flex gap-5 justify-center mr-[20%] ease-in-out" data-aos="fade-right"
-          data-aos-duration="15000">
+          <div className="flex gap-5 justify-center mr-[20%] " data-aos="fade-right"
+            data-aos-duration="1500">
             <div className="d1 d11 w-[40%]  m-5 ">
               <h1 className="titleh1 text-center m-3 pl-4">Banking, Financial Services and Insurance (BFSI)</h1>
               <div className="flex h-auto gap-2 ">
@@ -201,8 +201,8 @@ const Homepage = () => {
             </div>
           </div>
           {/* ........................................................ */}
-          <div className="flex gap-5 justify-end mr-[10%] ease-in-out " data-aos="fade-left"
-          data-aos-duration="15000">
+          <div className="flex gap-5 justify-end mr-[10%]  " data-aos="fade-left"
+            data-aos-duration="1500">
             <div className="d1 d13 w-[35%]  m-5">
               <h1 className="titleh1 text-center m-3 pl-4">HealthCare</h1>
               <div className="flex h-auto gap-3">

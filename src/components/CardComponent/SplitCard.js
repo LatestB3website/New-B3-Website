@@ -20,7 +20,7 @@ export default class SplitCard extends Component {
         {/* style={{ backgroundImage: `url(${webDevelopment})` }} */}
         <div
           data-aos="fade-up"
-          data-aos-duration="4000"
+          data-aos-duration="3500"
           className="mx-auto w-10/12 mt-4 relative containt"
         >
           {/* <div className="absolute left-10 top-20 z-10 bg-blue-500 text-white text-2xl font-bold flex items-center justify-center shadow-lg h-72 lg:h-72 w-72 lg:w-1/4 p-6 rounded-xl hover:-translate-y-6 transition-all duration-500">
@@ -64,7 +64,7 @@ export default class SplitCard extends Component {
 
         <div
           data-aos="fade-up"
-          data-aos-duration="4000"
+          data-aos-duration="3500"
           className="mx-auto w-10/12 relative containt "
         >
           <div className="absolute right-[-1.75rem] top-10 z-10 bg-blue-500 customborder text-white text-2xl font-bold flex items-center  text-center justify-center shadow-lg h-72 lg:h-72 w-72 lg:w-1/4 p-6 rounded hover:-translate-y-6 transition-all duration-500"></div>
@@ -95,7 +95,7 @@ export default class SplitCard extends Component {
 
         <div
           data-aos="fade-up"
-          data-aos-duration="4000"
+          data-aos-duration="3500"
           className="mx-auto w-10/12  relative containt "
         >
           <div className="absolute left-10 top-16 z-10 customborder bg-blue-500 bg-cover bg-center  text-white text-2xl font-bold flex items-center justify-center shadow-lg h-72 lg:h-72 w-72 lg:w-1/4 p-6 rounded hover:-translate-y-6 transition-all duration-500">
