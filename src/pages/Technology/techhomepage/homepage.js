@@ -179,6 +179,7 @@ const Homepage = () => {
       </div> */}
 
       <h1 className='mainh1'> Industries we deal with</h1>
+      
       <span className="for_underline block    -bottom-2 "></span>
       <div className="  flex  w-full h-auto p-10">
         <div className=" flex flex-col   w-auto h-auto ">
