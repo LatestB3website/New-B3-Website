@@ -76,7 +76,7 @@
 // }
 
 .fa-bars {
-  color: white;
+  color: black;
 }
 
 .nav-links-mobile {
@@ -92,30 +92,62 @@
     position: relative;
   }
 
+  .header-navbar {
+    background: white;
+    height: 65px;
+    // justify-content: space-between;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    font-size: 1.2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    width: 100%;
+  }
+
+
   .nav-menu {
     display: flex;
+    color: #fff;
+    align-items: center;
     flex-direction: column;
     width: 100%;
     height: 90vh;
     position: absolute;
-    top: 80px;
+    top: 65px;
     left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
+    justify-content: start;
+    // align-items: start;
   }
 
   .nav-menu.active {
-    background: #013766;
+    background: white;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding-left: 10%;
     left: 0;
+    color: white;
+    font-family: Montserrat, helvetica neue, helvetica, arial, sans-serif;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
   }
 
   .nav-links {
-    text-align: center;
-    padding: 2rem;
+    // text-align: center;
+    // padding: 5px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.409);
+    // color: #002eff;
+    color: #000;
+    font-family: Montserrat, helvetica neue, helvetica, arial, sans-serif;
+    font-weight: 800;
     width: 100%;
+    font-size: 20px;
     display: table;
   }
 
@@ -136,19 +168,19 @@
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-100%, 60%);
+    transform: translate(-100%, 40%);
     font-size: 1.8rem;
     cursor: pointer;
   }
 
   .fa-times {
-    color: white;
+    color: black;
     font-size: 2rem;
   }
 
   .nav-links-mobile {
     display: block;
-    text-align: center;
+    // text-align: center;
     padding: 1.5rem;
     margin: 2rem auto;
     border-radius: 4px;
@@ -162,10 +194,9 @@
   .nav-links-mobile:hover {
     background: #fff;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    color: #1888ff;
+    color: white;
     transition: 250ms;
   }
 
 
 }
-

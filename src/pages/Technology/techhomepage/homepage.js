@@ -18,9 +18,9 @@ import bank from "../../../assets/images/bankingicon.png"
 import ecom from "../../../assets/images/egovandecomicon.png"
 import healthcare from "../../../assets/images/healthcare.png"
 import Hospitality from "../../../assets/images/hospitality.png"
-import highquality from"../../../assets/images/high quality.jpg"
+import highquality from "../../../assets/images/high quality.jpg"
 import onbudget from "../../../assets/images/on budget.jpg"
-import backgroundImage from"../../../assets/images/background.jpg"
+import backgroundImage from "../../../assets/images/HomeBackground.jpg"
 import Aos from "aos";
 const Homepage = () => {
   const [showNavbar, setShowNavbar] = useState(true);
@@ -183,7 +183,7 @@ const Homepage = () => {
 
       <h1 className='mainh1'> Industries we deal with</h1>
 
-      <span className="w-[8%] h-[5px] ml-[9%] block rounded-b-[5px]" style={{backgroundColor:'#002eff'}}></span>
+      <span className="w-[8%] h-[5px] ml-[9%] block rounded-b-[5px]" style={{ backgroundColor: '#002eff' }}></span>
       <div className="  flex  w-full h-auto p-10">
         <div className=" flex flex-col   w-auto h-auto ">
           <div className="flex gap-5 justify-center mr-[20%] " data-aos="fade-right"
@@ -227,58 +227,66 @@ const Homepage = () => {
         </div>
       </div>
 
-      
 
-{/* <div  className="  flex w-full h-[100vh] pt-20  pb-[60%] pl-[100px] ">   */}
-<div className="flex w-full h-[100vh] pt-20 pb-[30%] pl-[20px] relative " style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: ' right bottom', backgroundRepeat: 'no-repeat'  }}>
 
-{/* <img src={background} className=" w-36 h-60" /> 
+      {/* <div  className="  flex w-full h-[100vh] pt-20  pb-[60%] pl-[100px] ">   */}
+      <div className="flex w-full h-[100vh] pt-20 pb-[30%] pl-[20px] relative " style={{ backgroundImage: `url(${backgroundImage})`, width: "100%", height: "80vh", backgroundSize: 'cover', backgroundPosition: ' right bottom', backgroundRepeat: 'no-repeat' }}>
+
+        {/* <img src={background} className=" w-36 h-60" /> 
  */}
- {/* <img src={background} className="absolute top-0 right-0 w-full h-full object-cover" /> */}
+        {/* <img src={background} className="absolute top-0 right-0 w-full h-full object-cover" /> */}
 
 
-  <div className="w-[30%] h-96  flex items-center justify-center">
-  
-  <h4 className="w-[230px] titlehead text-center leading-loose">
-  Why do our <span className="text-blue">clients</span> value us?
-</h4>
+        <div className="w-[30%] h-96  flex items-center justify-center">
 
-</div>
+          <h4 className="w-[230px] titlehead text-center leading-loose">
+            Why do our <span className="text-blue">clients</span> value us?
+          </h4>
 
-
-<div className="flex flex-col justify-center items-center w-[50%] h-96 gap-16 mt-10 " >
-  
-  <div className="flex w-[100%] h-[50%] gap-14 justify-center">
-  
-    <div className=" w-[35%] h-[110%] bg-blue-400 rounded-2xl">
-    <h1 className="text-center m-2  title33">High-quality products </h1>
-    <div className="flex h-auto gap-5 pl-2 text-center leading-6 mt-5 ">
-    <p>We create professional, bug-free, and optimized apps using modern technology for long-term use.</p>
-
-    </div>
-    </div>
-    <div className="w-[35%] h-[110%] bg-gray-200 rounded-2xl">
-        <img src={highquality} className="h-full rounded-2xl" />  
-    </div>
-  </div>
-
-  <div className="flex w-[100%] h-[50%] justify-start ml-12 gap-14">
-    <div className=" w-[35%] h-[110%] bg-gray-200 rounded-2xl">
-    <img src={onbudget} className="h-full rounded-2xl" /> 
-    </div>
-    <div className=" w-[35%] h-[110%] bg-blue-400 rounded-2xl">
-    <h1 className="text-center m-2  title33"> On budget, on-time</h1>
-    <div className="flex h-auto gap-5 pl-2 text-center leading-6 mt-5 ">
-    <p>Consistently delivering projects on time, within budget, and as per specifications.</p>
+        </div>
 
 
+        <div className="flex flex-col justify-center items-center ml-20 w-[50%] h-96 gap-16 mt-10 " >
 
-    </div>
-    </div>
-  </div>
-</div>
+          <div className="flex w-[100%] h-[50%] gap-14 justify-center">
 
-</div>
+            <div class="circle1">
+              <div class="quarter yellow"></div>
+              <div class="quarter orange"></div>
+              <div class="quarter bordo"></div>
+              <div class="quarter pink"></div>
+              <div class="cut"></div>
+            </div>
+
+            <div className=" w-[35%] h-[110%] bg-blue-500  border-blue-800 border-[2px]   rounded-2xl">
+              <h1 className="text-center my-2 text-white font-semibold     title33">High-quality products </h1>
+              <div className="flex h-auto gap-5 pl-2 text-white leading-6 mt-5 ">
+                <p>We create professional, bug-free, and optimized apps using modern technology for long-term use.</p>
+
+              </div>
+            </div>
+            <div className="w-[35%] h-[110%] bg-gray-200 rounded-2xl">
+              <img src={highquality} className="h-full rounded-2xl" />
+            </div>
+          </div>
+
+          <div className="flex w-[100%] h-[50%] justify-start ml-12 gap-14">
+            <div className=" w-[35%] h-[110%] bg-gray-200 rounded-2xl">
+              <img src={onbudget} className="h-full rounded-2xl" />
+            </div>
+            <div className=" w-[35%] h-[110%] bg-white rounded-2xl ">
+              <h1 className="text-center m-2  title33 font-semibold "> On budget, on-time</h1>
+              <div className="flex h-auto gap-5 pl-2  leading-6 mt-5 ">
+                <p>Consistently delivering projects on time, within budget, and as per specifications.</p>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
       <div className="tech-footer">
         <Footer />
       </div>
