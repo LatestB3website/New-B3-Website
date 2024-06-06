@@ -258,23 +258,23 @@ const Homepage = () => {
               <div class="cut"></div>
             </div>
 
-            <div className=" w-[35%] h-[110%] bg-blue-500  border-blue-800 border-[2px]   rounded-2xl">
+            <div className=" w-[35%] h-[110%] bg-blue-500  border-blue-800 border-[2px] boxShadow   rounded-2xl">
               <h1 className="text-center my-2 text-white font-semibold     title33">High-quality products </h1>
               <div className="flex h-auto gap-5 pl-2 text-white leading-6 mt-5 ">
                 <p>We create professional, bug-free, and optimized apps using modern technology for long-term use.</p>
 
               </div>
             </div>
-            <div className="w-[35%] h-[110%] bg-gray-200 rounded-2xl">
+            <div className="w-[35%] h-[110%] boxShadow bg-gray-200 rounded-2xl">
               <img src={highquality} className="h-full rounded-2xl" />
             </div>
           </div>
 
-          <div className="flex w-[100%] h-[50%] justify-start ml-12 gap-14">
-            <div className=" w-[35%] h-[110%] bg-gray-200 rounded-2xl">
+          <div className="flex w-[100%] h-[50%] justify-start ml-12 gap-14 ">
+            <div className=" w-[35%] h-[110%] bg-gray-200 rounded-2xl boxShadow">
               <img src={onbudget} className="h-full rounded-2xl" />
             </div>
-            <div className=" w-[35%] h-[110%] bg-white rounded-2xl ">
+            <div className=" w-[35%] h-[110%] bg-white rounded-2xl boxShadow ">
               <h1 className="text-center m-2  title33 font-semibold "> On budget, on-time</h1>
               <div className="flex h-auto gap-5 pl-2  leading-6 mt-5 ">
                 <p>Consistently delivering projects on time, within budget, and as per specifications.</p>
