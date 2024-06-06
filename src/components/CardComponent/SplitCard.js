@@ -12,7 +12,9 @@ import flutter from "../../assets/images/flutter.png";
 import enterpriselogo from "../../assets/images/computerlogo.png";
 import digital from "../../assets/images/digital.png";
 import solution from "../../assets/images/solution.png";
-
+import WebDevelopment from "../../assets/images/TechWebDev.png"
+import AndroidDevlopment from "../../assets/images/TechAppDev.png"
+import EnterpriseSolution from "../../assets/images/TechEnterprise.png"
 export default class SplitCard extends Component {
   render() {
     return (
@@ -20,7 +22,7 @@ export default class SplitCard extends Component {
         {/* style={{ backgroundImage: `url(${webDevelopment})` }} */}
         <div
           data-aos="fade-up"
-          data-aos-duration="3500"
+          data-aos-duration="4000"
           className="mx-auto w-10/12 mt-4 relative containt"
         >
           {/* <div className="absolute left-10 top-20 z-10 bg-blue-500 text-white text-2xl font-bold flex items-center justify-center shadow-lg h-72 lg:h-72 w-72 lg:w-1/4 p-6 rounded-xl hover:-translate-y-6 transition-all duration-500">
@@ -28,10 +30,10 @@ export default class SplitCard extends Component {
     </div> */}
 
           <div
-            className="absolute   left-10 top-10 z-10  bg-cover bg-center text-white text-2xl font-bold flex  customborder bg-blue-500 justify-center shadow-lg h-72 lg:h-72 w-72 lg:w-1/4 hover:-translate-y-6 rounded transition-all duration-500"
-            web
-            Development
+            className="absolute   left-10 top-10 z-10 bg-white  bg-cover bg-center  text-2xl font-bold flex p-3  	 customborder  justify-center  shadow-lg h-72 lg:h-72 w-72 lg:w-1/4 hover:-translate-y-6  transition-all duration-500"
+
           >
+            <img src={WebDevelopment} className="object-cover imagescss  " alt="" />
             <div className=" bg-opacity-75  rounded  "></div>
           </div>
 
@@ -51,7 +53,7 @@ export default class SplitCard extends Component {
                     maintenance are provided to keep your site running smoothly,
                     accompanied by comprehensive testing for quality assurance.
                   </p>
-                  <div className="flex  justify-end items-end gap-4">
+                  <div className="flex  justify-end items-end gap-3">
                     <img src={javascript} className="h-10 " />
                     <img src={reactlogo} className="h-10" />
                     <img src={nodelogo} className="h-10" />
@@ -64,10 +66,14 @@ export default class SplitCard extends Component {
 
         <div
           data-aos="fade-up"
-          data-aos-duration="3500"
+          data-aos-duration="4000"
           className="mx-auto w-10/12 relative containt "
         >
-          <div className="absolute right-[-1.75rem] top-10 z-10 bg-blue-500 customborder text-white text-2xl font-bold flex items-center  text-center justify-center shadow-lg h-72 lg:h-72 w-72 lg:w-1/4 p-6 rounded hover:-translate-y-6 transition-all duration-500"></div>
+          <div className="absolute right-[-1.75rem] top-10 z-10 bg-white  bg-cover customborder    text-center justify-center shadow-lg h-72 lg:h-72 w-72 lg:w-1/4 p-3 hover:-translate-y-6 transition-all duration-500">
+            <img src={AndroidDevlopment} className="imagescss  " alt="" />
+            <div className=" bg-opacity-75  rounded  "></div>
+
+          </div>
 
           <div className="bg-white parentDiv w-[90%]   relative left-20  shadow-2xl p-6 rounded-2xl  transform transition-all  border ">
             <div className="flex flex-col h-80 items-start">
@@ -81,7 +87,7 @@ export default class SplitCard extends Component {
                 maintenance. We implement robust security measures and seamless
                 integration with backend systems.
               </p>
-              <div className="flex justify-end items-end gap-4 ">
+              <div className="flex justify-end items-end gap-3 ">
                 <img src={javalogo} className="h-12 " />
                 <img src={kotline} className="h-9 image " />
                 <img src={flutter} className="h-9 image " />
@@ -95,14 +101,18 @@ export default class SplitCard extends Component {
 
         <div
           data-aos="fade-up"
-          data-aos-duration="3500"
+          data-aos-duration="4000"
           className="mx-auto w-10/12  relative containt "
         >
-          <div className="absolute left-10 top-16 z-10 customborder bg-blue-500 bg-cover bg-center  text-white text-2xl font-bold flex items-center justify-center shadow-lg h-72 lg:h-72 w-72 lg:w-1/4 p-6 rounded hover:-translate-y-6 transition-all duration-500">
-            <div className="bg-blue-500  bg-opacity-75 p-6 rounded"></div>
+          <div
+            className="absolute   left-10  top-16  z-10 p-3 bg-white  bg-cover bg-center  text-2xl font-bold flex   	 customborder  justify-center  shadow-lg h-72 lg:h-72 w-72 lg:w-1/4 hover:-translate-y-6  transition-all duration-500"
+
+          >
+            <img src={EnterpriseSolution} className="imagescss  " alt="" />
+            <div className=" bg-opacity-75  rounded  "></div>
           </div>
 
-          <div className="bg-white  parentDiv w-[90%] h-96 relative left-20 shadow-2xl  p-4 rounded-xl mb-5 mt-5 transform transition-all  border ">
+          <div className="bg-white  parentDiv w-[90%] h-96 relative left-20 shadow-2xl  p-3 rounded-xl mb-5 mt-5 transform transition-all  border ">
             <div className="flex flex-col items-end ">
               <div className="mb-10 ">
                 {/* <h2 className="text-lg text-gray-600 mb-4">Web Development</h2> */}
@@ -120,7 +130,7 @@ export default class SplitCard extends Component {
                     quality and optimization, and integrated DevOps for
                     efficient workflows.
                   </p>
-                  <div className="flex justify-end items-end gap-4 ">
+                  <div className="flex justify-end items-end gap-3 ">
                     <img src={enterpriselogo} className="h-10  " />
                     <img src={digital} className="h-10 " />
                     <img src={solution} className="h-10  " />
