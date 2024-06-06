@@ -19,6 +19,13 @@ export default class SplitCard extends Component {
   render() {
     return (
       <div className="flex flex-col items-center min-h-screen bg-gray-100">
+       
+
+ <h1 className="text-start pr-80 heading1 mb-10 ">Our Professional Services Portfolio
+ 
+<span className="w-[14%] h-[5px]  block rounded-b-[5px]" style={{backgroundColor:'#002eff'}}></span> 
+ </h1> 
+
         {/* style={{ backgroundImage: `url(${webDevelopment})` }} */}
         <div
           data-aos="fade-up"
