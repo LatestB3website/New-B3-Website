@@ -18,6 +18,9 @@ import bank from "../../../assets/images/bankingicon.png"
 import ecom from "../../../assets/images/egovandecomicon.png"
 import healthcare from "../../../assets/images/healthcare.png"
 import Hospitality from "../../../assets/images/hospitality.png"
+import highquality from"../../../assets/images/high quality.jpg"
+import onbudget from "../../../assets/images/on budget.jpg"
+import backgroundImage from"../../../assets/images/background.jpg"
 import Aos from "aos";
 const Homepage = () => {
   const [showNavbar, setShowNavbar] = useState(true);
@@ -224,6 +227,58 @@ const Homepage = () => {
         </div>
       </div>
 
+      
+
+{/* <div  className="  flex w-full h-[100vh] pt-20  pb-[60%] pl-[100px] ">   */}
+<div className="flex w-full h-[100vh] pt-20 pb-[30%] pl-[20px] relative " style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: ' right bottom', backgroundRepeat: 'no-repeat'  }}>
+
+{/* <img src={background} className=" w-36 h-60" /> 
+ */}
+ {/* <img src={background} className="absolute top-0 right-0 w-full h-full object-cover" /> */}
+
+
+  <div className="w-[30%] h-96  flex items-center justify-center">
+  
+  <h4 className="w-[230px] titlehead text-center leading-loose">
+  Why do our <span className="text-blue">clients</span> value us?
+</h4>
+
+</div>
+
+
+<div className="flex flex-col justify-center items-center w-[50%] h-96 gap-16 mt-10 " >
+  
+  <div className="flex w-[100%] h-[50%] gap-14 justify-center">
+  
+    <div className=" w-[35%] h-[110%] bg-blue-400 rounded-2xl">
+    <h1 className="text-center m-2  title33">High-quality products </h1>
+    <div className="flex h-auto gap-5 pl-2 text-center leading-6 mt-5 ">
+    <p>We create professional, bug-free, and optimized apps using modern technology for long-term use.</p>
+
+    </div>
+    </div>
+    <div className="w-[35%] h-[110%] bg-gray-200 rounded-2xl">
+        <img src={highquality} className="h-full rounded-2xl" />  
+    </div>
+  </div>
+
+  <div className="flex w-[100%] h-[50%] justify-start ml-12 gap-14">
+    <div className=" w-[35%] h-[110%] bg-gray-200 rounded-2xl">
+    <img src={onbudget} className="h-full rounded-2xl" /> 
+    </div>
+    <div className=" w-[35%] h-[110%] bg-blue-400 rounded-2xl">
+    <h1 className="text-center m-2  title33"> On budget, on-time</h1>
+    <div className="flex h-auto gap-5 pl-2 text-center leading-6 mt-5 ">
+    <p>Consistently delivering projects on time, within budget, and as per specifications.</p>
+
+
+
+    </div>
+    </div>
+  </div>
+</div>
+
+</div>
       <div className="tech-footer">
         <Footer />
       </div>

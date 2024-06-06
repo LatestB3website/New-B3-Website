@@ -14,7 +14,7 @@ import {
 const Footer = () => {
   return (
     <div className="pg-footer">
-      <footer className="footer  " style={{  backgroundColor: "rgb(0, 96, 181)" }}>
+      <footer className="footer bg-blue-900 " >
         <div className="footer-content container mx-auto h-96 ">
           <div className="row flex flex-wrap">
             <div className="footer-col w-full sm:w-1/2 lg:w-1/4 px-4 mb-8 sm:mb-0 mt-10">
@@ -149,7 +149,7 @@ const Footer = () => {
               <div className="footer-call-to-action ">
                 <h4 className="footer-call-to-action-title text-xl text-white capitalize mb-4 relative font-medium">
                   Address
-                  <span className="block w-12 h-0.5 bg-black absolute left-0 -bottom-2"></span>
+                  <span className="block w-12 h-[3px] bg-black absolute left-0 -bottom-2"></span>
                   {/* <span
                     className="block w-12 h-0.5 absolute left-0 -bottom-2"
                     style={{
