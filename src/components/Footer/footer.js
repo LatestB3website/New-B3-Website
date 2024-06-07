@@ -149,7 +149,7 @@ const Footer = () => {
               <div className="footer-call-to-action ">
                 <h4 className="footer-call-to-action-title text-xl text-white capitalize mb-4 relative font-medium">
                   Address
-                  <span className="block w-12 h-[3px] bg-black absolute left-0 -bottom-2"></span>
+                  <span className="block w-12 h-[1px] bg-black absolute left-0 -bottom-2"></span>
                   {/* <span
                     className="block w-12 h-0.5 absolute left-0 -bottom-2"
                     style={{
